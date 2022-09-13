@@ -1,0 +1,90 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-nav {
+  background-color: rgb(248, 249, 250);
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; */
+  z-index: 1;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  height: 3.6rem;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.navbar-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+a {
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+}
+.navigate:hover {
+  border-bottom: 2px solid red;
+  transition: all 100ms;
+}
+
+.menu {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 970px) {
+  .navbar {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container-nav {
+    background-color: rgb(248, 249, 250);
+    position: relative;
+  }
+  .menu-overlay {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+  .navbar-ul {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(248, 249, 250);
+    display: none;
+  }
+  .active {
+    display: flex;
+  }
+}

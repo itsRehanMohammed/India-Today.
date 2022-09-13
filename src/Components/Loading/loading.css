@@ -1,0 +1,17 @@
+.container {
+  width: 80vw;
+  margin: 3rem auto;
+}
+
+.loading-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 970px) {
+  .container {
+    width: 95vw;
+    margin: 1rem auto;
+  }
+}
